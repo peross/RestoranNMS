@@ -99,6 +99,21 @@ h2:after{
     margin-bottom: 10px;
 }
 
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+
+    /* margin-right: 10px; */
+
+    /* PORAVNAVANJE TEKSTA I IKONA */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
 /* ------DUGMAD ZA HERO SEKCIJU------ */
 
 .btn:link, .btn:visited{
@@ -296,4 +311,23 @@ header{
     height: 50px;
     width: auto;
     margin-right: 10px;
+}
+
+.btn-app:link,
+.btn-app:visited{
+    border: 0;
+}
+
+/* -------------------------- */
+/* ------CITIES - LOKACIJA SEKCIJA------ */
+/* -------------------------- */
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-features{
+    margin-bottom: 5px;
 }
