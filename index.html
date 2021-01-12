@@ -4,16 +4,25 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="resources/vendors/css/normalize.css">
     <link rel="stylesheet" href="resources/vendors/css/grid.css">
+    <link rel="stylesheet" href="resources/vendors/css/ionicons.min.css">
+
     <link rel="stylesheet" href="resources/css/style.css">
+
+    <!--
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
-    <title>NMS Restoran</title>
+    -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
+
+    <title>Hilton</title>
 </head>
     <body>
         <header>
             <nav>
                 <div class="row">
-                    <img class="logo" src="resources/img/hilton-logo-white.png" alt="Hilton">
+                    <a href="index.html"><img class="logo" src="resources/img/hilton-logo-white.png" alt="Hilton"></a>
                     <ul class="main-nav">
                         <li><a href="#">Dostava hrane</a></li>
                         <li><a href="#">Kako radimo</a></li>
@@ -28,5 +37,58 @@
                 <a class="btn btn-ghost" href="#">Prikaži još</a>
             </div>
         </header>
+
+        <section class="features-section">
+            <div class="row">
+                <h2>Dobijte hranu brzo &mdash; ne brzu hranu</h2>
+                <p class="long-copy">
+                    Zdravo, mi smo Hilton, Vaša nova premijum usluga dostave hrane. Znamo da ste uvijek zauzeti.
+                    Nemate vremena za spremanje hrane. Pobrinimo se za to, zaista smo dobri u tome!
+                </p>
+            </div>
+            <div class="row">
+
+                <div class="col span-1-of-4 box">
+                    <ion-icon class="icon-big" name="infinite-outline"></ion-icon>
+                    <h3>365 dana u godini</h3>
+                    <p>
+                        Nikad više ne kuvajte! Zaista to mislimo. Naši pretplatni planovi uključuju do 365 dana u godini.
+                        Možete odabrati i fleksibilnije naručivanje ako je to vaš stil.
+                    </p>
+                </div>
+
+                <div class="col span-1-of-4 box">
+                    <ion-icon class="icon-big" name="stopwatch-outline"></ion-icon>
+                    <h3>Spremno za 20 min</h3>
+                    <p>
+                        Udaljeni ste samo dvadeset minuta od svojih ukusnih i super zdravih obroka koji se
+                        dostavljaju pravo do vašeg doma. Radimo sa najboljim kuvarima u gradu
+                        kako bismo osigurali da budete 100% zadovoljni.
+                    </p>
+                </div>
+
+                <div class="col span-1-of-4 box">
+                    <ion-icon class="icon-big" src="resources/img/nutrition-outline.svg"></ion-icon>
+                    <h3>100% organsko</h3>
+                    <p>
+                        Sve naše povrće je svježe, organsko i lokalno. Životinje se uzgajaju bez dodavanja
+                        hormona ili antibiotika. Dobro za vaše zdravlje, okoliš, a ima i bolji ukus!
+                    </p>
+                </div>
+
+                <div class="col span-1-of-4 box">
+                    <ion-icon class="icon-big" name="cart-outline"></ion-icon>
+                    <h3>Naručite bilo šta</h3>
+                    <p>
+                        Ne ograničavamo vašu kreativnost, što znači da možete naručiti sve što želite.
+                        Takođe možete odabrati sa našeg menija koji sadrži preko 100 ukusnih jela. Do Vas je!
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     </body>
 </html>

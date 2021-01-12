@@ -7,14 +7,14 @@
 html{
     background-color: #fff;
     color: #000;
-    font-family: 'Lato', 'Arial', sans-serif;
+    font-family: 'Roboto', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
 }
 
 /* -------------------------- */
-/* KOMPONENTE KOJE SE KORISTE NA VISE MJESTA */
+/* ------KOMPONENTE KOJE SE KORISTE NA VISE MJESTA------ */
 /* -------------------------- */
 
 .row{
@@ -22,19 +22,73 @@ html{
     margin: 0 auto;
 }
 
-/* HEADINGS H1 */
+section{
+    padding: 80px 0;
+}
+
+.box{
+    padding: 1%;
+}
+
+/* ------ZAGLAVLJE H1------ */
+
+h1, h2, h3{
+    text-transform: uppercase;
+    font-weight: 300;
+}
 
 h1{
     margin-top: 0;
     margin-bottom: 20px;
     color: #fff;
     font-size: 240%; /* 240% od 20px (20px je velicina fonta za kompletan html dokument koja je podesena na vrhu css-a */
-    text-transform: uppercase;
-    font-weight: bold;
     word-spacing: 4px;
+    letter-spacing: 1px;
 }
 
-/* DUGMAD ZA HERO SEKCIJU */
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after{
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    width: 100px;
+    margin: 30px auto 0;
+}
+
+/* ------PARAGRAFI------ */
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%; /* ------CENTRIRANJE PARAGRAFA (UKUPNA SIRINA JE 100%, 70% ZAUZIMA PARAGRAF, OSTAJE 30%. POLA OD 30 JE 15. NA TAJ NACIN JE PARAGRAF CENTIRAN*/
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/* ------IKONE------*/
+.icon-big{
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+/* ------DUGMAD ZA HERO SEKCIJU------ */
 
 .btn:link, .btn:visited{
     display: inline-block;
@@ -71,7 +125,7 @@ h1{
 }
 
 /* -------------------------- */
-/* HEADER */
+/* ------HEADER------ */
 /* -------------------------- */
 header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) ,url("img/hero.jpg"); /* ZATAMNJIVANJE POZADINE */
@@ -82,13 +136,13 @@ header{
 
 .hero-text-box{
 
-    /* CENTRIRANJE TEKSTA */
+    /* ------CENTRIRANJE TEKSTA------ */
     position: absolute;
     width: 1140px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* CENTRIRANJE TEKSTA  - KRAJ */
+    /* ------CENTRIRANJE TEKSTA  - KRAJ------ */
 }
 
 .logo{
@@ -96,6 +150,7 @@ header{
     width: auto;
     float: left;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .main-nav{
