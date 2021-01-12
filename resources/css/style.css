@@ -13,6 +13,17 @@ html{
     text-rendering: optimizeLegibility;
 }
 
+/* ------OCISTI FLOAT------ */
+
+.clearfix{zoom: 1;}
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 /* -------------------------- */
 /* ------KOMPONENTE KOJE SE KORISTE NA VISE MJESTA------ */
 /* -------------------------- */
@@ -125,7 +136,7 @@ h2:after{
 }
 
 /* -------------------------- */
-/* ------HEADER------ */
+/* ------HEADER SEKCIJA------ */
 /* -------------------------- */
 header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) ,url("img/hero.jpg"); /* ZATAMNJIVANJE POZADINE */
@@ -178,5 +189,111 @@ header{
 .main-nav li a:hover,
 .main-nav li a:active{
     border-bottom: 2px solid #e67e22;
+}
 
+/* -------------------------- */
+/* ------FEATURES - KARAKTERISTIKE SEKCIJA------ */
+/* -------------------------- */
+
+.features-section .long-copy{
+    margin-bottom: 30px;
+}
+
+/* -------------------------- */
+/* ------MEALS - OBROCI SEKCIJA------ */
+/* -------------------------- */
+
+.meals-section{
+    padding: 0;
+}
+
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%; /* DA BI SE SLIKE PRIKAZALE PREKO CIJELOG EKRANA (25*4=100) */
+}
+
+.meal-photo{
+    width: 100%;
+    margin: 0; /* IAKO JE margin: 0; VEC DEFINISAN, MORAMO GA OPET DEFINISATI ZBOG normalize.css FAJLA */
+    overflow: hidden; /* DA SLIKE NE BI PRELAZILE IZVAN EKRANA */
+    background-color: #000; /* DA BI SMO POTAMNILI SLIKU STAVLJAMO CRNU POZADINU I U .meal-photo img POSTAVLJAMO opacity */
+}
+
+.meal-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/* -------------------------- */
+/* ------STEPS - KORACI SEKCIJA------ */
+/* -------------------------- */
+
+.steps-section{
+    background-color: #f4f4f4;
+}
+
+.steps-box{
+
+}
+
+/*  */
+.steps-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen{
+    width: 40%;
+}
+
+.works-step{
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type{
+    margin-bottom: 30px;
+}
+
+.works-step div{
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.works-step p{
+    padding: 5px;
+}
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
 }
