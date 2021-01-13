@@ -311,6 +311,74 @@
             </div>
         </section>
 
+        <section class="contact-section">
+            <div class="row">
+                <h2>Kontaktirajte nas</h2>
+            </div>
+            <div class="row">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Ime</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Ime" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="email@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Od koga ste čuli za nas?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="find-us" id="find-us">
+                                <option value="friend">Od prijatelja</option>
+                                <option value="internet" selected>Putem interneta</option>
+                                <option value="ad">Putem oglasa</option>
+                                <option value="other">Drugo</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Promotivni mejlovi?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="checkbox" id="checkbox" checked> Da, želim
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="message">Poruka</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" id="message" placeholder="Vaša poruka"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Pošalji">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
         <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     </body>
 </html>
